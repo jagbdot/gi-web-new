@@ -1,0 +1,163 @@
+
+/* light */
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-light-beta-webfont.f2018925.woff2') format('woff2'),
+         url('inter-light-beta-webfont.de4616f5.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-lightitalic-beta-webfont.1f2fa5fe.woff2') format('woff2'),
+         url('inter-lightitalic-beta-webfont.46220eed.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+
+/* regular */
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-regular-webfont.3ca6b2b3.woff2') format('woff2'),
+         url('inter-regular-webfont.b33a01e7.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-italic-webfont.da396328.woff2') format('woff2'),
+         url('inter-italic-webfont.5024f783.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+
+/* medium */
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-medium-webfont.9d385ebf.woff2') format('woff2'),
+         url('inter-medium-webfont.9128a84d.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-mediumitalic-webfont.51984e27.woff2') format('woff2'),
+         url('inter-mediumitalic-webfont.fb1d0f6e.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+
+/* semibold */
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-semibold-webfont.110aa742.woff2') format('woff2'),
+         url('inter-semibold-webfont.54530489.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-semibolditalic-webfont.8a4440fd.woff2') format('woff2'),
+         url('inter-semibolditalic-webfont.e099472a.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+
+
+/* bold */
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-bold-webfont.d2e028ea.woff2') format('woff2'),
+         url('inter-bold-webfont.235f0cb5.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-bolditalic-webfont.6d03925d.woff2') format('woff2'),
+         url('inter-bolditalic-webfont.b0cd2b11.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+/* extrabold */
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-extrabold-webfont.a450f3e0.woff2') format('woff2'),
+         url('inter-extrabold-webfont.a990ea26.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('inter-extrabolditalic-webfont.af7a13a9.woff2') format('woff2'),
+         url('inter-extrabolditalic-webfont.ca3322c9.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+
+
+/* script */
+
+
+
+@font-face {
+    font-family: 'rock salt';
+    src: url('rocksalt-webfont.bc794879.woff2') format('woff2'),
+         url('rocksalt-webfont.84d9f452.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

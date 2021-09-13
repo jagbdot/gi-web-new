@@ -1,0 +1,70 @@
+
+
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+h1 span {
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+
+}
+
+.credit {
+  font-family: Termina, sans-serif;
+}
+.credit a {
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll {
+  height: 30vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+.pin-wrap {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 0;
+  height: 60vh;
+
+}
+
+.pin-wrap-loco-left{
+    left: -90vw;
+    position: relative;
+}
+
+.pin-wrap-loco-right{
+    right: -90vw;
+    position: relative;
+}
+
+.pin-wrap > * {
+  padding: 0 5vw;
+  min-width: 80vw;
+}
+
+
+
+.pin-wrap p{
+  font-size: 0.7rem;
+  width: 28rem;
+  font-style: italic;
+}
