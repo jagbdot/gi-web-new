@@ -147,7 +147,7 @@ TweenMax.to({}, 0.016, {
 $(document).on("mousemove", function (e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
-}); // yellow circle
+}); // One link
 
 $(".link").on("mouseenter", function () {
   cursor.addClass("active");
@@ -156,5 +156,14 @@ $(".link").on("mouseenter", function () {
 $(".link").on("mouseleave", function () {
   cursor.removeClass("active");
   follower.removeClass("active");
+}); // another link
+
+$(".link-intro").on("mouseenter", function () {
+  cursor.addClass("active2");
+  follower.addClass("active2");
+});
+$(".link-intro").on("mouseleave", function () {
+  cursor.removeClass("active2");
+  follower.removeClass("active2");
 });
 },{}]},{},["LMRJ"], null)

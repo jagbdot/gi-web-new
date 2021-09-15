@@ -8,6 +8,23 @@
 	font-size: 16px;
 }
 
+.back-intro-div{
+	position: absolute;
+    height: 80%;
+    width: 72.5%;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+.div-to-fill{
+	
+	height: 2000px;
+	width: 100vw;
+}
+
 #work-body{
 	background-color: #101010;
 }
@@ -162,7 +179,14 @@ body{
   width: 100%;
   height: 100%;
   top: 0%;
+}
 
+.overlay-2{
+	position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 0%;
+  top: -90%;
 }
 
 .overlay:hover{
@@ -171,6 +195,11 @@ body{
 
 .first-curtain {
   background: #E4FA4A;
+    z-index: 99;
+}
+
+.fourth-curtain {
+	background: #E4FA4A;
     z-index: 99;
 }
 
@@ -190,11 +219,42 @@ body{
   z-index: 97;
 }
 
+
 .first-curtain img{
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate3d(-50%,-50%, 0);
+    left: 48.5%;
+    top: 45.5%;
+    transform: translate3d(-50%,-50%, 0);
+    content: '';
+    -webkit-animation: spin 0.1s linear infinite;
+}
+
+.fourth-curtain img{
+	position: absolute;
+    left: 48.5%;
+    top: 45.5%;
+    transform: translate3d(-50%,-50%, 0);
+    content: '';
+    -webkit-animation: spin 0.1s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }    
 }
 
 .text {
@@ -498,43 +558,244 @@ h6{
 }
 
 .surface-img1{
-position: absolute;
+	position: absolute;
     z-index: 90;
-    width: 68vh;
+    width: 72vh;
     left: 6vw;
     top: 68vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img1.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img6{
+	position: absolute;
+    z-index: 91;
+    width: 46vh;
+    left: 2vw;
+    top: 41vw;
+  	opacity: 0;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img6.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img10{
+	position: absolute;
+    z-index: 90;
+    width: 67vh;
+    left: 9vw;
+    top: 28vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img10.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img11{
+	position: absolute;
+    z-index: 90;
+    width: 67vh;
+    right: 9vw;
+    top: 68vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img11.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img7{
+	position: absolute;
+    z-index: 90;
+    width: 56vh;
+    right: 54vw;
+    top: 50vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img7.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img9{
+	position: absolute;
+    z-index: 90;
+    width: 62vh;
+    left: 47vw;
+    top: 86vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img9.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
 }
 
 .surface-img2{
     position: absolute;
     z-index: 90;
-    width: 78vh;
+    width: 82vh;
     right: 6vw;
     top: 34vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img2.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
 }
 
 .surface-img3{
     position: absolute;
     z-index: 90;
-    width: 88vh;
+    width: 92vh;
     right: 0vw;
     top: 104vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img3.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
 }
 
 .surface-img4{
-position: absolute;
+	position: absolute;
     z-index: 90;
-    width: 43vh;
+    width: 47vh;
     left: 14vw;
-    top: 10vw;
+    top: 0vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img4.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img14{
+	position: absolute;
+    z-index: 90;
+    width: 47vh;
+    left: 14vw;
+    top: 111vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img14.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img8{
+	position: absolute;
+    z-index: 90;
+    width: 36vh;
+    right: 20vw;
+    top: 20vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img8.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img12{
+	position: absolute;
+    z-index: 90;
+    width: 42vh;
+    right: 5vw;
+    top: 4vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img12.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
 }
 
 .surface-img5{
-position: absolute;
+	position: absolute;
     z-index: 90;
-    width: 23vh;
-    right: 16vw;
+    width: 27vh;
+    right: 36vw;
     top: 75vw;
+     opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img5.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img15{
+	position: absolute;
+    z-index: 90;
+    width: 30vh;
+    left: 7vw;
+    top: 99vw;
+    opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img15.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
+}
+
+.surface-img13{
+	position: absolute;
+    z-index: 90;
+    width: 27vh;
+    right: 36vw;
+    top: 2vw;
+     opacity: 0;
+    transform: none;
+	transition:opacity .6s;
+}
+
+.surface-img13.is-inview{
+	opacity:1;
+	transition-delay: 0.3s;
 }
 
 

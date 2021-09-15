@@ -1,9 +1,13 @@
 
+* {
+  box-sizing: border-box;
+  cursor: none;
+}
+
 .cursor {
   position: fixed;
-  background-color: #E4FA4A;
+  background-color: #242424;
   width: 10px;
-  color: #E4FA4A;
   height: 10px;
   border-radius: 100%;
   z-index: 1;
@@ -16,6 +20,12 @@
 .cursor.active {
   opacity: 1;
   transform: scale(0);
+  background-color: transparent;
+}
+.cursor.active2 {
+  opacity: 1;
+  transform: scale(0);
+  background-color: transparent;
 }
 .cursor.menu-active {
   opacity: 1;
@@ -27,7 +37,7 @@
 
 .cursor-follower {
   position: fixed;
-  border: 1px solid #E4FA4A;
+  border: 1px solid #fbfbf8;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -37,19 +47,44 @@
   pointer-events: none;
   z-index: 10000;
   transform: translate(2px, 2px);
+  transform: rotate(-20deg);
 }
+
 .cursor-follower.active {
   opacity: 1;
   transform: scale(3);
-  border: 0px solid #E4FA4A;
+  border: 0px solid #fbfbf8;
+  font-size: 32.5px;
+  transform: rotate(-20deg);
 }
 
 .cursor-follower.active::before {
   content: "Go!";
-  color: #E4FA4A;
-    font-family: 'rock salt';
+  color: #fbfbf8;
+  font-family: 'rock salt';
   text-transform: lowercase;
+  transform: rotate(-20deg);
 }
+
+.cursor-follower.active2 {
+  opacity: 1;
+  transform: scale(3);
+  border: 0px solid #fbfbf8;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 17.5px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.active2::before {
+  content: "scroll down! ↓";
+  color: #fbfbf8;
+  font-family: 'rock salt';
+  text-transform: lowercase;
+  white-space: nowrap;
+  transform: rotate(-20deg);
+}
+
 
 .cursor-follower.menu-active {
   opacity: 1;

@@ -147,7 +147,7 @@ iframe {
     letter-spacing: -0.2px;
     text-transform: uppercase;
     z-index: 90;
-        font-style: italic;
+    font-style: italic;
     margin-bottom: 3vh;
   }
 
@@ -168,11 +168,8 @@ iframe {
 
 
 .project-subtitle-preview.is-inview{
-
-opacity:1;transform:none;transition-delay: 1s; transform: rotate(-20deg);
+	opacity:1;transform:none;transition-delay: 1s; transform: rotate(-20deg);
     transition: 0.8s;
-
-
 }
 
 .o-image {

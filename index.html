@@ -39,6 +39,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	<body class="demo-3">
 		<!-- Overlay + GIF -->
 	    <div class="overlay first-curtain"><img src="stamp.7b788238.svg"></div>
+	    <div class="overlay-2 fourth-curtain"><img src="stamp.7b788238.svg"></div>
 	    <div class="overlay third-curtain"></div>
 
     	<!-- Mobile Menu -->
@@ -46,17 +47,17 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 		<main class="container smooth-scroll" id="main" data-scroll-container="">
 
-	
            <section class="c-section" data-scroll-section="">
-           				<section id="c-fixed_wrapper" class="c-section" data-textcolor="#101010" data-bgcolor="#fbfbf8">
+           	<section id="c-fixed_wrapper" class="c-section" data-textcolor="#101010" data-bgcolor="#fbfbf8">
 			<div class="dark-bg">
 				<section id="header" class="content content--auto">
 					<!-- Frame -->
 					<div class="frame">
+						<div class="back-intro-div link-intro"></div>
 						<div class="frame__title-wrap">
 							<a class="hidetext link" href="index.html">
 								<!-- Logo -->
-								<img src="logo-f.377b24fb.svg" alt="">
+								
 							</a>
 						</div>
 						<div class="frame__stamp">
@@ -67,15 +68,13 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 						<!-- Work Page -->
 						<div class="frame__links" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-5">
-							<a class="hidetext link" href="#">Press</a>
+							<a class="hidetext link" href="locomotive-reference.html">Press</a>
 						</div>
 						<!-- Culture Page -->
 						<div class="frame__demos" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="5">
 							<a class="hidetext link" href="culture.html">CULTURE</a>
 						</div>
-								<div class="frame__footer" data-scroll-speed="-5">
-							<a href="#">Scroll Down</a>
-						</div>
+						
 						<!-- Contact Page -->
 						<div class="frame__contact" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-5">
 							<a class="hidetext link" href="#">CONTACT</a>
@@ -85,14 +84,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<!--Vimeo Wrapper -->
 				<div class="vimeo-wrapper">
 					<div class="sponsor">
-						<div class="square-wrapper">
-							<iframe id="embedvideo" class="preview__item-video not-video" src="https://player.vimeo.com/video/389189295?&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0" width="760" height="480" allow="autoplay; fullscreen" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-						</div>
+						<!--<div class="square-wrapper">
+							<iframe id="embedvideo" class='preview__item-video not-video' src="https://player.vimeo.com/video/389189295?&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0" width="760" height="480" allow="autoplay; fullscreen" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>-->
 						<img class="logo-img" src="logo-3.463dcf8d.svg" alt="">
 					</div>
   				</div>
 			</div> <!-- Dark bg finished -->
-</section>
+
                 <div class="o-container" id="speed-control" data-textcolor="#fbfb8" data-bgcolor="#101010">
 				<section class="content content-middle-2">
 	
@@ -102,7 +101,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<section class="content no-padding content--feature">
 					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="5.be971960.jpg"></a>
+	                               	<a id="button" class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="5.be971960.jpg"></a>
 	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">(phase 1.1)</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
 	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
@@ -190,20 +189,11 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 				</section>
 
-
-
-
-
-			<section class="content content-middle-2">
-		
-	
-				</section>
-
-
                 </div>
+
             </section>
 		
-</main>
+</section></main>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   		<!-- three js -->
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js" integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
@@ -261,7 +251,20 @@ TweenMax.from(".sponsor p", 1.5, {
   y: "20",
   ease: Expo.easeInOut
 });</script>
+		<script>$('.link').on("click", function (ev) {
+  ev.preventDefault(); // prevent default anchor behavior
 
-	
+  var goTo = $(this).attr("href"); // store anchor href
+
+  TweenMax.to(".fourth-curtain", 1, {
+    delay: 0,
+    top: "0%",
+    height: "100%",
+    ease: Expo.easeInOut
+  });
+  setTimeout(function () {
+    window.location = goTo;
+  }, 1250); // time in ms
+});</script>
 	</body>
 </html>

@@ -1,0 +1,30 @@
+
+
+.contents__img {
+  opacity: 0;
+  position: absolute;
+  top: -3vh;
+  left: 0;
+  will-change: transform;
+  z-index: 0 !important;
+}
+
+.contents{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0 !important;
+
+}
+
+.c-header{
+  position: relative;
+}
+
+.c-header_heading{
+  z-index: 99 !important;
+}
+
+.poster-gif{
+  width: 88%;
+}
