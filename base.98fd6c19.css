@@ -8,6 +8,49 @@
 	font-size: 16px;
 }
 
+.mobile-grabs{
+	display: none;
+}
+
+.frame__links ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-size: 1.03em;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.mobile-vimeo-controls{
+	display: none
+}
+
+.frame__links ul li {
+    display: table-cell;
+    padding: 0 2.5em;
+    text-align: right;
+}
+
+.frame__links ul li:last-child {
+    padding-left: 2em;
+    padding-right: 0;
+}
+
+.noiseBG {
+ 
+  background-image: url(https://static.tumblr.com/rxfwyqf/20Zlzzth8/noise.png);
+  opacity: 0.07;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
 .back-intro-div{
 	position: absolute;
     height: 80%;
@@ -17,6 +60,10 @@
 	left:0;
 	right:0;
 	margin: auto;
+}
+
+.no-mobile{
+	display: block;
 }
 
 .div-to-fill{
@@ -56,12 +103,30 @@
 }
 
 
+.icon{
+	width: 12px !important;
+	    margin-left: 10px;
+}
+
+.icon2{
+	width: 19px !important;
+}
+
 .vimeo-wrapper{
 	  height: 100%;
 	  position: absolute;
 	  width: 100%;
 	  top: 0;
+	  z-index: -1;
 	  left: 0;
+}
+
+.zindex{
+	z-index: 99 !important;
+    height: 88% !important;
+    width: 100%;
+    bottom: 0 !important;
+    top: auto;
 }
 
 .content{
@@ -109,14 +174,37 @@ iframe{
   transform: translateY(-50%);
   height: 74.5vh;
   width: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+
+.horizontal-iframe{
+    top: 49% !important;
+    height: 71.5vh !important;
+}
+
+.map-container{
+	width: 100%;
+    position: absolute;
+    overflow: hidden;
+    height: 40%;
+    bottom: 0;
+}
+
+#map{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: auto;
+
 }
 
 .fondo{
 	position: absolute;
 	top:0;
 	width: 100%;
-	opacity: 0.2;
-	display: none;
+	opacity: 0;
 }
 
 .fondo img{
@@ -155,7 +243,7 @@ body{
   background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
   background-repeat: repeat;
   animation: bg-animation .2s infinite;
-  opacity: .9;
+  opacity: 1;
   visibility: visible;
 }
 
@@ -203,8 +291,56 @@ body{
     z-index: 99;
 }
 
-.second-curtain {
-  background-image: url("compilation2.d43a39d9.gif");
+.second-curtain-tlol {
+  background-image: url("tlol-compilation.136bdbb6.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
+.second-curtain-kd {
+  background-image: url("kd-compilation.fa98b97a.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
+.second-curtain-fd {
+  background-image: url("fd-compilation.3025a4ad.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
+.second-curtain-hotn {
+  background-image: url("hotn-compilation.f08e74b4.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
+.second-curtain-me {
+  background-image: url("me-compilation.5f9f406c.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
+.second-curtain-hg {
+  background-image: url("hg-compilation.afcf4429.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
+.second-curtain-sy {
+  background-image: url("shaw-compilation.b1aa9d85.gif");
   background-attachment: fixed;
   background-repeat: no-repeat !important;
   background-size: 100%;
@@ -407,7 +543,7 @@ main {
 }
 
 .content {
-	padding: 2.5em 3em;
+	padding: 1.6em 1.5em 2.5em;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -427,7 +563,7 @@ main {
 
 .data-info{
 	clear: both;
-	margin-top: 11.5em;
+	margin-top: 7.5em;
 }
 
 .number{
@@ -442,15 +578,19 @@ main {
 }
 
 h6{
-	font-size: 0.8em;
-	margin: 1.3em 0;
-	font-weight: 700;
+    font-size: 0.7em;
+    margin: 2em 0 0.9em;
+    font-weight: 600;
 }
 
 .content-middle{
 	padding: 0em 16vw 11vw;
+
 }
 
+.min-height{
+	min-height: 120vh;
+}
 
 
 
@@ -540,11 +680,8 @@ h6{
     font-style: normal;
     letter-spacing: -0.3px;
     font-weight: 900;
- 
     padding: 0.15em 0.3em;
     width: auto;
-
-
     text-align: left;
     display: table;
 }
@@ -834,6 +971,11 @@ h6{
     bottom: 30vh !important;
     position: relative;
 }
+
+.mm2{
+	display: none;
+}
+
 
 .red{
 	position: relative;
@@ -1207,6 +1349,71 @@ html.has-scroll-dragging {
 
 @media screen and (min-width: 53em) {
 
+	.frame h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.6em;
+	}
+
+	.name{
+		margin: 0.2em 0;
+	}
+
+	.mail{
+		display: block;
+		margin-bottom: 2em;
+		text-transform: lowercase;
+		color: #101010;
+	}
+
+	.mail-2{
+		display: block;
+    	text-transform: lowercase;
+	    color: #fbfbf8;
+	    z-index: 99;
+	    font-size: 2em;
+	    float: right;
+	    text-decoration: underline;
+	}
+
+	#logo{
+		width: 170px !important;
+	}
+
+	.info{
+    position: absolute;
+    text-align: left;
+    width: 85%;
+    height: 62%;
+    right: 0;
+    margin: auto;
+    left: 0;
+    bottom: 0%;
+    z-index: 99;
+	}
+
+	.info span{
+		display: block;
+    	font-size: 0.75em;
+	}
+
+
+
+	.info div{
+    display: inline-block;
+    float: left;
+    width: 21%;
+	}
+
+	.info a{
+			text-decoration: underline;
+		}
+
+	.hello{
+		float: left;
+    	margin-left: 5px;
+    	text-transform: lowercase;
+    	font-weight: 400;
+	}
 
 	.frame {
 		display: grid;
@@ -1215,10 +1422,9 @@ html.has-scroll-dragging {
 		width: 100%;
 		grid-gap: 0;
 		color: #242424;
-	    font-weight: 700;
-	    font-style: italic;
+	    font-weight: 800;
 	    font-size: 0.88rem;
-	    grid-template-columns: 10% 1fr 10%;
+	    grid-template-columns: 31% 1fr 17%;
 	    grid-template-rows: 7% 89% 4%;
 	    grid-template-areas:
 	        'title stamp links'
@@ -1231,6 +1437,27 @@ html.has-scroll-dragging {
 	.frame__title {
 		margin: 0;
 		grid-area: title;
+
+	}
+	.frame__title-wrap{
+		position: relative;
+		font-size: 1.25em;
+	}
+	.frame__title-wrap img{
+	    width: 1.2em;
+    	display: inline-block;
+    	float: left;
+    	position: relative;
+    	top: 0.4em;
+    	margin-right: 0.7em;
+	}
+	.frame__title-wrap span{
+	    display: inline-block;
+	    float: left;
+	    position: relative;
+	    top: 0.3em;
+	    		text-transform: lowercase !important;
+	    		font-weight: 500;
 	}
 	.frame__stamp {
 		margin: 0;
@@ -1246,7 +1473,17 @@ html.has-scroll-dragging {
 		justify-self: start;
 		align-self: end;
 		position: relative;
-		left: -11.4em;
+		width: 27vw;
+	}
+	.frame__demos .stamp{
+		width: 25px;
+		float: left;
+	}
+	.frame__demos p{
+    text-align: left;
+    font-size: 0.72em;
+    letter-spacing: 0.2px;
+    font-weight: 600;
 	}
 	.frame__footer {
 		grid-area: footer;
@@ -1260,7 +1497,7 @@ html.has-scroll-dragging {
 		padding: 0;
 		justify-self: end;
 		position: relative;
-		left: -10.8em;
+
 	}
 	.frame__contact {
 		grid-area: contact;
@@ -1268,7 +1505,11 @@ html.has-scroll-dragging {
 		justify-self: end;
 		align-self: end;
 		position: relative;
-		left: 11.4em;
+		font-weight: 500;
+    	letter-spacing: 1px;
+	}
+	.frame__contact img{
+		width: 62.5%;
 	}
 	.tiles--columns-rotated .tiles__line {
 		width: 33vmax;
@@ -1355,6 +1596,172 @@ html.has-scroll-dragging {
 
 @media screen and (max-width: 850px) {
 
+.second-curtain {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-tlol {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-kd {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-fd {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-hotn {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-me {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-hg {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.second-curtain-sy {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.third-curtain {
+    background-size: cover !important;
+    background-position: 50%;
+}
+
+.mobile-grabs{
+	display: block;
+}
+
+.content-middle {
+    padding: 0em 5vw;
+}
+
+.content__breakout--big {
+    font-size: 100vw;
+}
+
+.content__breakout--medium {
+    font-size: 25vw !important;
+    margin-top: 2em;
+}
+
+.mobile-vimeo-controls{
+	width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 6.5em;
+    background-color: #242424;
+    display: block;
+    z-index: 99;
+}
+
+.mobile-vimeo-controls div{
+	display: block;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    height: 100%;
+}
+
+.mobile-vimeo-controls p{
+	position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+}
+
+.number {
+    font-size: 0.95rem !important;
+}
+
+h6 {
+    font-size: 0.55em;
+}
+
+.data {
+    font-size: 0.78em !important;
+}
+
+.intro {
+    line-height: 1.9;
+    font-size: 25.5px;
+}
+
+.description {
+    font-size: 15px !important;
+    line-height: 2 !important;
+}
+
+.icon{
+	width: 20px !important;
+	margin: 0 25px;
+}
+
+.icon2{
+	width: 28px !important;
+	margin: 0 25px;
+}
+
+.content__breakout--medium img {
+    width: 100vw !important;
+}
+
+.margin-top{
+	margin-top: 0;
+}
+
+.bts-title{
+	display: none !important;
+}
+
+.mm{
+    display: none;
+}
+
+.mm2{
+	display: block;
+}
+
+.mm2 img{
+	display: block;
+	width: 100%;
+	margin: 5px 0;
+
+}
+
+.min-height{
+	min-height: 95vh;
+}
+
+	.mobile-grabs img{
+		width: 100%;
+		margin: 5px 0;
+	}
+	.no-mobile{
+		display: none !important;
+	}
+
+	.div-to-fill{
+		display: none;
+	}
+
 	#hamburger {
 	    display: block;
 	}
@@ -1405,8 +1812,11 @@ html.has-scroll-dragging {
 		display: none;
 	}
 
-	.content__breakout--big{
-		font-size: 55vw;
+	.frame__title-wrap{
+		margin-top: 2em;
 	}
-	
+
+	.frame__title-wrap .the-stamp{
+		display: none;
+	}
 }

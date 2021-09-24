@@ -18,7 +18,11 @@
 		<link rel="stylesheet" href="main.c52e0fe2.css">
 		<link rel="stylesheet" href="trigger.76f286a2.css">
 		<link rel="stylesheet" type="text/css" href="base.98fd6c19.css">
+		<link rel="stylesheet" type="text/css" href="style.5b5cfae7.css">
 
+		
+
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>document.documentElement.className = "js";
 
@@ -37,74 +41,151 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 	<!-- BODY -->
 	<body class="demo-3">
+		<div class="noiseBG"></div>
+		<div id="hamburger">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+
+		<div id="menu-mobile">
+		  <div id="bg-menu-mobile">
+		  </div>
+		  
+		  <ul id="ul-menu" class="z-index-js-0 opacity-0">
+		    <li><a href="index.html">Home</a></li>
+		    <li><a href="work.html">Work</a></li>
+		    <li><a href="culture.html">Culture</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+		    <li><a target="_blank" href="https://vimeo.com/user132168916/">Vimeo</a></li>
+		    <li><a target="_blank" href="https://www.instagram.com/goodideastudio/">Instagram</a></li>
+		  </ul>
+		</div>
 		<!-- Overlay + GIF -->
 	    <div class="overlay first-curtain"><img src="stamp.7b788238.svg"></div>
 	    <div class="overlay-2 fourth-curtain"><img src="stamp.7b788238.svg"></div>
 	    <div class="overlay third-curtain"></div>
 
     	<!-- Mobile Menu -->
-		<div class="bg"></div>
+	<img class="fondo" src="fondo-index.a419be74.png" alt="">
 
 		<main class="container smooth-scroll" id="main" data-scroll-container="">
 
            <section class="c-section" data-scroll-section="">
-           	<section id="c-fixed_wrapper" class="c-section" data-textcolor="#101010" data-bgcolor="#fbfbf8">
+           	<section id="c-fixed_wrapper" class="c-section" data-textcolor="#101010" data-bgcolor="#E4FA4A">
 			<div class="dark-bg">
-				<section id="header" class="content content--auto">
+				<section id="header" class="content content--auto" data-scroll="" data-scroll-speed="9">
 					<!-- Frame -->
 					<div class="frame">
 						<div class="back-intro-div link-intro"></div>
 						<div class="frame__title-wrap">
 							<a class="hidetext link" href="index.html">
 								<!-- Logo -->
-								
+								<a class="hidetext link" href="mailto:hello@goodideastudio.ca"><img class="the-stamp" src="stamp.7b788238.svg" alt=""><span>hello@goodideastudio.ca</span></a>
 							</a>
 						</div>
 						<div class="frame__stamp">
 							<!-- G Stamp -->
 							<a class="link" href="">
-								<img src="stamp.7b788238.svg" alt="">
+								
 							</a>
 						</div>
 						<!-- Work Page -->
-						<div class="frame__links" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-5">
-							<a class="hidetext link" href="locomotive-reference.html">Press</a>
+						<div class="frame__links">
+							<ul>
+								<li>
+									<a class="hidetext link" href="work.html">Work</a>
+								</li>
+								<li>
+									<a class="hidetext link" href="culture.html">Culture</a>
+								</li>
+								<li>
+									<a class="hidetext link" href="contact.html">Contact</a>
+								</li>
+							</ul>
 						</div>
 						<!-- Culture Page -->
-						<div class="frame__demos" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="5">
-							<a class="hidetext link" href="culture.html">CULTURE</a>
+						<div class="frame__demos">
+							<p>GOOD-IDEA® is a commercial and narrative production company known for cinematic films that blur the lines between storytelling and advertising.</p>
 						</div>
 						
 						<!-- Contact Page -->
-						<div class="frame__contact" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-5">
-							<a class="hidetext link" href="#">CONTACT</a>
+						<div class="frame__contact">
+							<a class="hidetext link" href="#">Scroll Down ↓</a>
 						</div>
 					</div>
 				</section>
 				<!--Vimeo Wrapper -->
 				<div class="vimeo-wrapper">
 					<div class="sponsor">
-						<!--<div class="square-wrapper">
-							<iframe id="embedvideo" class='preview__item-video not-video' src="https://player.vimeo.com/video/389189295?&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0" width="760" height="480" allow="autoplay; fullscreen" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>-->
-						<img class="logo-img" src="logo-3.463dcf8d.svg" alt="">
+	<script id="v-svg" type="x/template">
+		  <div class="w-100">
+		    <!-- ANIMATED -->
+		    <div class="flex">
+		      <div class="w-3/4">
+		 
+		        <svg>
+		          <filter id="transmissionerror">
+		            <feColorMatrix type="saturate" values="1" in="SourceGraphic" result="colormatrix1" />
+		            <feColorMatrix type="matrix" values="0.98 0   0   0   0.  0   0.98  0   0   0.  0   0   0.97  0   0   0   0   0   1   0 " in="colormatrix1" result="colormatrix2" />
+		            <feTurbulence ref="turbAnim" type="turbulence" baseFrequency="0.002 0.008" numOctaves="2" seed="5" stitchTiles="noStitch" result="turbulence">
+		              <animate ref="bfAnim" attributeName="baseFrequency" from="0.002 0.008" to="0.002 0.01" dur="3500ms" repeatCount="indefinite" />
+		              <animate ref="ocAnim" attributeName="numOctaves" from="1" to="10" dur="750ms" repeatCount="indefinite" />
+		              <animate ref="sdAnim" attributeName="seed" from="1" to="100" dur="10s" repeatCount="indefinite" />
+		            </feTurbulence>
+		            <feColorMatrix type="saturate" values="30" in="turbulence" result="colormatrix3" />
+		            <feColorMatrix type="matrix" values="0.89 0   0   0   0   0   0.97  0   0   0   0   0   0.35  0   0   0   0   0   1   0 " in="colormatrix3" result="colormatrix4" />
+		            <feDisplacementMap in="colormatrix2" in2="colomatrix4" scale="15" xChannelSelector="R" yChannelSelector="A" result="displacementMap" />
+		          </filter>s
+		        </svg>
+		      </div>
+		  </div>
+	</script>
+	<div id="app">
+		<svg-playground></svg-playground>
+	</div>
+	<img class="logo-img" src="logo-3.463dcf8d.svg" alt="">
 					</div>
   				</div>
 			</div> <!-- Dark bg finished -->
 
-                <div class="o-container" id="speed-control" data-textcolor="#fbfb8" data-bgcolor="#101010">
+                <div class="o-container" id="speed-control" data-textcolor="#101010" data-bgcolor="#101010">
 				<section class="content content-middle-2">
-	
         	
 				<p class="content__breakout content__breakout--big work-page" data-scroll="" data-scroll-speed="82" data-scroll-direction="horizontal">First Date First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span></p>
 
 				<section class="content no-padding content--feature">
-					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a id="button" class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="5.be971960.jpg"></a>
-	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">(phase 1.1)</h3>
+	                               	<a id="button" class="link" href="first-date.html"><img class="c-speed-block_image no-fast" src="1.7d2bbaa8.gif"></a>
+	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">short film</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
+Director Ross Allen 
+Director of Photography Mitchell Baxter
+Director of Photography Jon Thomas
+Executive Producer Jordan Barber
+Producer Mack Stannard
+Steadicam Jan Schadle Ubeda
+Photographer Michèle Bygodt
+Stylist Mackenzie Dunham
+Editor Miguel Barbosa
+Colourist Clinton Homuth
+Sound Designer Levi Considine
+Composer & Mixer Andrew Harris
+Starring Tatenda Hatugari
+Starring Emma Young
+
+
+Production Company: GOOD-IDEA®
+Film Processing: MELS
+Film Scan: Filmhouse
+
+Specials Thanks:
+Vapor Music
+Artjail
+Family Management
+Peter Hagg
+Keslow Camera
+
 	                        	 	</p>
 	                            </div>
 				</section>
@@ -112,12 +193,49 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<p class="content__breakout content__breakout--big work-page margin-top" data-scroll="" data-scroll-speed="-52" data-scroll-direction="horizontal">Walking Alone Walking Alone <span>(KD / DC)</span>Walk Alone <span>(KD / DC)</span> Walk Alone <span>(KD / DC)</span>Walk Alone <span>(KD / DC)</span> Walk Alone <span>(KD / DC)</span></p>
                                     
 				<section class="content no-padding content--feature">
-					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image" src="8.13591245.jpg"></a>
-	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">(kd / dc)</h3>
+	                               	<a class="link" href="walk-alone.html"><img class="c-speed-block_image" src="1.88a6b9ce.gif"></a>
+	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">commercial</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
+Director: Ross Allen
+Producer: Mack Stannard
+Executive Producer: Jordan Barber
+.Executive Producer: Scott Mackenzie
+Executive Producer: Scott Smith
+Director of Photography: Mitchell Baxter
+1st AC: Michelle Yardley
+Drone Pilot: Tyler McDougall
+Drone Operator: Tom
+Drone Tech: Patrick Henry
+Segway Operator: Randy Ennis
+Drone / Segway: Peacemaker Filmworks
+Gaffer / Key Grip: Adrianna Hankins
+Sound Operator: Anton Thomas
+Food Stylist: Dino Renearts
+Hair & Makeup Key: Jessica DePalma
+Wardrobe: Mackenzie Dunham
+VTR: Colin Clucas
+DIT: Pieter Blokker
+Photographer: Miles Clark
+Photo Assist Nik Molson
+Production Manager: Harrison Rose
+Production Coordinator: Maddy Chang
+Race Walker: Evan Dunfee
+Roadside Worker: Jarett John
+Agency: Rethink
+Creative Director: Loretta Lau,  
+Creative Director: Allan Topol
+Associate Creative Director / Copywriter: Marko Pandza, 
+Associate Creative Director / Art Director: Jason Kerr
+Group Account Director: Amy Greenspoon
+Account Director: Kai de Bruyn Kops
+Account Manager: Allie Kennedy
+Producer: Alina Prussky
+Editorial: Saints Editorial 
+Editor: Danica Pardo
+Producer: Phoebe Lorimer
+Colour: Darling VFX
+
 	                        	 	</p>
 	                            </div>
 				</section>
@@ -125,12 +243,28 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<p class="content__breakout content__breakout--big work-page margin-top" data-scroll="" data-scroll-speed="82" data-scroll-direction="horizontal">The Limit Of love <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span></p>
 
 				<section class="content no-padding content--feature">
-					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="f1.b6fe3e47.jpg"></a>
-	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">(short film)</h3>
+	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="1.21f14f18.gif"></a>
+	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">short film</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
+Written & Directed by Ross Allen
+Director of Photography Mitchell Baxter
+Produced by Mack Stannard
+Starring MJ Kehler & Samuel Campbell Wilson
+Production Company: Boldly
+EP: Kristoff Duxbury
+Edited by Ross Allen
+Camera Assistant Charles Hadrian
+Music by Jeremy Wallace Maclean
+Mixed by Matt Drake
+Coloured by Sam Gilling
+Words by Camille Brown
+On Sets Stills by Gerard Wood
+Supported by
+Keslow Camera
+Boldly
+Production Company: GOOD-IDEA®
+
 	                        	 	</p>
 	                            </div>
 				</section>
@@ -140,36 +274,94 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<section class="content no-padding content--feature">
 					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image" src="f1.21d9d5ef.jpg"></a>
-	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">Commercial</h3>
+	                               	<a class="link" href="heartbeat-of-the-nation.html"><img class="c-speed-block_image" src="1.fc4546d5.gif"></a>
+	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">commercial</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
+	                             		Writer / Director: Ross Allen
+Producer: Mack Stannard
+Cinematographers:
+Mitchell Baxter
+Jon Thomas
+Jaryl Lim
+Ben Cox
+Cristobal Ruiz
+Liam Higgins
+Jonny Micay
+Justin Black
+Adrian Vieni
+Daniel Everitt-Lock
+Brian Hamilton
+Adam Madrzyk 
+Shae Paterson
+Halley Davies
+Simon Jaynes
+Oli Jobin
+Matthew A MacDonald
+Edit: Ross Allen
+Sounds Design & Mix: Matt Drake
+Grade: Sam Gilling
+Original Music: Blake Matthews
+GFX: Dane Armour
+Social Strategist: Andrew Chee
+Partners:
+CanadaHelps
+Gore Mutual
+Production Company: GOOD-IDEA®
+
 	                        	 	</p>
 	                            </div>
 				</section>
            
-				<p class="content__breakout content__breakout--big work-page margin-top" data-scroll="" data-scroll-speed="82" data-scroll-direction="horizontal">Mitsubishi <span>England x Rugby</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span></p>
-
-				<section class="content no-padding content--feature">
-					    
-	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="1.46ef77a1.jpg"></a>
-	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">England Rugby</h3>
-	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
-	                        	 	</p>
-	                            </div>
-				</section>
-
-				<p class="content__breakout content__breakout--big work-page margin-top" data-scroll="" data-scroll-speed="-52" data-scroll-direction="horizontal">Harlequin <span>Gold</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span></p>
+				<p class="content__breakout content__breakout--big work-page margin-top" data-scroll="" data-scroll-speed="82" data-scroll-direction="horizontal">Harlequin <span>Gold</span>Harlequin <span>Golg</span> First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span></p>
                                     
 				<section class="content no-padding content--feature">
 					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image" src="1.f267de9f.jpg"></a>
-	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">Music Video</h3>
+	                               	<a class="link" href="harlequin-gold.html"><img class="c-speed-block_image" src="1.00ab8a7b.gif"></a>
+	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">music Video</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
+
+Director: Ross Allen
+Producer: Mack Stannard
+Executive Producer: Seb Galina
+Production Manager: Josh Havelka
+Production Assistant: Mitchell Girard
+Director of Photography: Mitchell Baxter
+1st AC: Olly Bian
+Steadicam Operator: Scott Nuttal
+Grip: Brian Cassie
+Gaffer: Jesse Wicklund
+Stylist: Carlee Wallace
+Styling Assistant: Melisa Boyalikli
+Key Makeup Artist: Ruby Wills
+Makeup Assistant: Sarah Buffitt
+Choreographer: Christina Schell 
+Choreographer: Christian Lagasse
+POST
+Edit: Ross Allen
+Colour: Sam Gilling
+Graphics: Jesse Shaw
+
+	                        	 	</p>
+	                            </div>
+				</section>
+
+				<p class="content__breakout content__breakout--big work-page margin-top" data-scroll="" data-scroll-speed="-52" data-scroll-direction="horizontal">Mitsubishi <span>England x Rugby</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span>First Date <span>(phase 1.1)</span> First Date <span>(phase 1.1)</span></p>
+
+				<section class="content no-padding content--feature">
+					    
+	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
+	                               	<a class="link" href="mitsubishi-england-rugby.html"><img class="c-speed-block_image no-fast" src="1.e56be2ee.gif"></a>
+	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">commercial</h3>
+	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
+Director: Ross Allen
+DOP: Aaron Adrian Rogers
+Producer: Rob Wildsmith
+Editor: Sam Hopkins
+Agency: Trailer Park London
+Creative Director: Charlie Johnson
+Client: Mitsubishi UK
+
 	                        	 	</p>
 	                            </div>
 				</section>
@@ -179,10 +371,22 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<section class="content no-padding content--feature">
 					    
 	                            <div class="o-image" data-scroll="" data-scroll-speed="-3">
-	                               	<a class="link" href="the-limit-of-love.html"><img class="c-speed-block_image no-fast" src="1.3f3ce21e.jpg"></a>
+	                               	<a class="link" href="shaw.html"><img class="c-speed-block_image no-fast" src="1.5c5da021.gif"></a>
 	                               	<h3 class="project-subtitle-preview" data-scroll="" data-scroll-repeat="">Commercial</h3>
 	                            	<p class="c-speed-block_title" data-scroll="" data-scroll-repeat="">
-	                             		“The Limit of Love” explores the subconscious paradox of loving eternally whilst fearing the end. Written & Directed by Ross Allen. Director of Photography Mitchell Baxter. Produced by Mack Stannard. Starring MJ Kehler & Samuel Campbell Wilson. Production Company: Boldly. EP: Kristoff Duxbury. Edited by Ross Allen. Camera Assistant Charles Hadrian. Music by Jeremy Wallace Maclean. Mixed by Matt Drake
+Director: Ross Allen
+Director of Photography: Cole Graham
+Producer: Jordan Barber
+Production Manager: Phillip Thomas
+Production Coordinator: Spencer Foley
+Production Company: GOOD-IDEA®
+Production Designer: Jo Carkner
+Agency: Rethink Canada
+Producer: David Fraser-Winsby
+ACD: Sean O'Connor
+ACD: Pamela Rounis
+Senior Art Director: Jake Hope
+
 	                        	 	</p>
 	                            </div>
 				</section>
@@ -201,17 +405,20 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
   
 	
 	    <script src="main.fb6bbcaf.js"></script>
-	 
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script><script src="script.89b41b21.js"></script>
 
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 	    <script src="menu.0c91648c.js"></script>
 	    <script src="js.00a46daa.js"></script>
 	   	<script src="cursor.f70347af.js"></script>
+	   	<script src="script.89b41b21.js"></script>
+	   	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
 
   		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script><script src="trigger.22f9dc1c.js"></script>
+		
 
 		<script src="js.00a46daa.js?version=1"></script>
 		<script>$.ajax({
@@ -233,8 +440,8 @@ TweenMax.to(".third-curtain", 1.25, {
 });</script>
 
 		<script>// SPONSOR
-TweenMax.from(".sponsor img", 1.5, {
-  delay: 1.5,
+TweenMax.from(".sponsor img", 2.2, {
+  delay: 1.9,
   opacity: 0,
   y: "20",
   ease: Expo.easeInOut
@@ -265,6 +472,48 @@ TweenMax.from(".sponsor p", 1.5, {
   setTimeout(function () {
     window.location = goTo;
   }, 1250); // time in ms
+});</script>
+		<script>// var static = $('.noiseBG');
+// staticAnimate(static);
+// function staticAnimate(object) {
+//     TweenMax.to(object, .03, {
+//         backgroundPosition: Math.floor(Math.random() * 100) + 1 + "% " + Math.floor(Math.random() * 10) + 1 + "%", 
+//         onComplete: staticAnimate,
+//         onCompleteParams: [object],
+//         ease:SteppedEase.config(1)
+//     });
+// }
+var static = $('.noiseBG');
+TweenMax.to('.noiseBG', .03, {
+  repeat: -1,
+  onRepeat: repeatStatic,
+  ease: SteppedEase.config(1)
+});
+
+function repeatStatic() {
+  TweenMax.set('.noiseBG', {
+    backgroundPosition: Math.floor(Math.random() * 100) + 1 + "% " + Math.floor(Math.random() * 10) + 1 + "%"
+  });
+} // var tl = new TimelineMax({ paused:false, repeat: -1, delay: 0 });
+//   tl
+//     .to(static, 0.1, {backgroundPosition:"30% 20%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"55% 69%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"27% 37%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"14% 44%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"22% 2%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"7% 77%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"50% 88%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"85% 32%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"19% 85%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"11% 11%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"42% 95%", ease:SteppedEase.config(1)})
+//     .to(static, 0.1, {backgroundPosition:"69% 54%", ease:SteppedEase.config(1)})
+
+
+$(window).load(function () {
+  $('.killer').click(function () {
+    tl.kill();
+  });
 });</script>
 	</body>
 </html>

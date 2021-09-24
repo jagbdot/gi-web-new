@@ -165,5 +165,77 @@ $(".link-intro").on("mouseenter", function () {
 $(".link-intro").on("mouseleave", function () {
   cursor.removeClass("active2");
   follower.removeClass("active2");
+}); // The limit of lvoe
+
+$(".frame7").on("mouseenter", function () {
+  cursor.addClass("project-1");
+  follower.addClass("project-1");
+});
+$(".frame7").on("mouseleave", function () {
+  cursor.removeClass("project-1");
+  follower.removeClass("project-1");
+}); // First Date
+
+$(".frame2").on("mouseenter", function () {
+  cursor.addClass("project-2");
+  follower.addClass("project-2");
+});
+$(".frame2").on("mouseleave", function () {
+  cursor.removeClass("project-2");
+  follower.removeClass("project-2");
+}); // First Date
+
+$(".frame3").on("mouseenter", function () {
+  cursor.addClass("project-3");
+  follower.addClass("project-3");
+});
+$(".frame3").on("mouseleave", function () {
+  cursor.removeClass("project-3");
+  follower.removeClass("project-3");
+}); // Mitsubishi
+
+$(".frame4").on("mouseenter", function () {
+  cursor.addClass("project-4");
+  follower.addClass("project-4");
+});
+$(".frame4").on("mouseleave", function () {
+  cursor.removeClass("project-4");
+  follower.removeClass("project-4");
+}); // Harlequin Gold
+
+$(".frame5").on("mouseenter", function () {
+  cursor.addClass("project-5");
+  follower.addClass("project-5");
+});
+$(".frame5").on("mouseleave", function () {
+  cursor.removeClass("project-5");
+  follower.removeClass("project-5");
+}); // Harlequin Gold
+
+$(".frame5").on("mouseenter", function () {
+  cursor.addClass("project-5");
+  follower.addClass("project-5");
+});
+$(".frame5").on("mouseleave", function () {
+  cursor.removeClass("project-5");
+  follower.removeClass("project-5");
+}); // Shaw
+
+$(".frame6").on("mouseenter", function () {
+  cursor.addClass("project-6");
+  follower.addClass("project-6");
+});
+$(".frame6").on("mouseleave", function () {
+  cursor.removeClass("project-6");
+  follower.removeClass("project-6");
+}); // Walk ALone
+
+$(".frame1").on("mouseenter", function () {
+  cursor.addClass("project-7");
+  follower.addClass("project-7");
+});
+$(".frame1").on("mouseleave", function () {
+  cursor.removeClass("project-7");
+  follower.removeClass("project-7");
 });
 },{}]},{},["LMRJ"], null)

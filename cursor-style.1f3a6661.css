@@ -16,17 +16,19 @@
   pointer-events: none;
   z-index: 10000;
   transform: scale(1);
+
 }
 .cursor.active {
   opacity: 1;
   transform: scale(0);
-  background-color: transparent;
+ 
 }
 .cursor.active2 {
   opacity: 1;
-  transform: scale(0);
-  background-color: transparent;
+  transform: scale(1);
+  background-color: #fff;
 }
+
 .cursor.menu-active {
   opacity: 1;
   transform: scale(0);
@@ -60,6 +62,23 @@
 
 .cursor-follower.active::before {
   content: "Go!";
+  color: #E4F85A;
+  font-family: 'rock salt';
+  text-transform: lowercase;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower2.active {
+  opacity: 1;
+  transform: scale(3);
+  border: 0px solid #fbfbf8;
+
+  font-size: 32.5px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.active::before {
+  content: "Go!";
   color: #fbfbf8;
   font-family: 'rock salt';
   text-transform: lowercase;
@@ -71,20 +90,169 @@
   transform: scale(3);
   border: 0px solid #fbfbf8;
   font-weight: 600;
+
   letter-spacing: 1px;
   font-size: 17.5px;
   transform: rotate(-20deg);
+
 }
 
 .cursor-follower.active2::before {
-  content: "scroll down! ↓";
-  color: #fbfbf8;
   font-family: 'rock salt';
+  color: #fff;
   text-transform: lowercase;
+      content:"Welcome!";
   white-space: nowrap;
   transform: rotate(-20deg);
 }
 
+.cursor-follower.project-1 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-1::before {
+  content: "The Limit Of Love";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+ 
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.cursor-follower.project-2 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-2::before {
+  content: "First Date";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+    
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.cursor-follower.project-3 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-3::before {
+  content: "Heartbeat of the nation";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+    
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.cursor-follower.project-4 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-4::before {
+  content: "England Rugby";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+    
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.cursor-follower.project-5 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-5::before {
+  content: "Harlequin Gold";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+    
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+
+.cursor-follower.project-6 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-6::before {
+  content: "Shaw (You Got It)";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+    
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.cursor-follower.project-7 {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 700;
+  border: 0px solid transparent;
+  letter-spacing: 1px;
+  font-size: 22px;
+  transform: rotate(-20deg);
+}
+
+.cursor-follower.project-7::before {
+  content: "Walk Alone (kd)";
+  font-family: 'rock salt';
+  color: #fbfbf8;
+  transform: scale(2);
+    
+  -webkit-text-stroke-color: #242424;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
 
 .cursor-follower.menu-active {
   opacity: 1;

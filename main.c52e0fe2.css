@@ -6,12 +6,33 @@
 
 }
 
+.uppercase{
+	text-transform: uppercase !important;
+}
+
 .oc-section.is-inview ~ .c-fixed_wrapper .logo-img{
 	 opacity: 0.1 !important;
 }
 
 iframe{
 	z-index: 2;
+}
+
+
+body{
+  background-color: #CB9805;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas{
+  touch-action: none;
+}
+
+h3{
+	    font-size: 1.2rem;
+	    font-weight: 500;
+	    margin-bottom: 1.1em !important;
 }
 
 iframe {
@@ -41,11 +62,13 @@ iframe {
 
 
 .logo-img{
-	width: 100% !important;
+  	width: 100vw;
     position: absolute;
-    top: 37%;
+    top: -6%;
+    bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
     opacity: 1;
     z-index: 1;
 }
@@ -213,6 +236,30 @@ iframe {
     left: -47vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+	.info{
+		margin-top: 2em;
+	}
+
+	.mail{
+		color: #242424;
+		text-decoration: underline;
+		margin-bottom: 2.5em;
+		display: block;
+	}
+
+	.map-container{
+		display: none;
+	}
+
+	h6 {
+	    margin: 3em 0 2.9em !important;
+	}
 }
 
 
