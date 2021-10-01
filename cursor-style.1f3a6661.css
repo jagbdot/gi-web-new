@@ -56,7 +56,7 @@
   opacity: 1;
   transform: scale(3);
   border: 0px solid #fbfbf8;
-  font-size: 32.5px;
+  font-size: 38.5px;
   transform: rotate(-20deg);
 }
 
@@ -72,14 +72,14 @@
   opacity: 1;
   transform: scale(3);
   border: 0px solid #fbfbf8;
-
-  font-size: 32.5px;
+  font-size: 26.5px;
   transform: rotate(-20deg);
 }
 
 .cursor-follower.active::before {
   content: "Go!";
   color: #fbfbf8;
+  padding: 0 12.5px;
   font-family: 'rock salt';
   text-transform: lowercase;
   transform: rotate(-20deg);
@@ -88,20 +88,21 @@
 .cursor-follower.active2 {
   opacity: 1;
   transform: scale(3);
-  border: 0px solid #fbfbf8;
+  border: 0px solid #313131;
   font-weight: 600;
-
   letter-spacing: 1px;
-  font-size: 17.5px;
+  font-size: 26.5px;
   transform: rotate(-20deg);
 
 }
 
 .cursor-follower.active2::before {
   font-family: 'rock salt';
-  color: #fff;
+  color: #242424;
+  background-color: #fbfbf8;
+  padding: 0 12.5px;
   text-transform: lowercase;
-      content:"Welcome!";
+  content:"Welcome!";
   white-space: nowrap;
   transform: rotate(-20deg);
 }

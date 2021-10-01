@@ -349,7 +349,7 @@ body{
 }
 
 .third-curtain {
-  background-image: url("compilation4.beba67e4.gif");
+  background-image: url("final-intro.323c737c.gif");
   background-attachment: fixed;
   background-repeat: no-repeat !important;
   background-size: 100%;
@@ -1363,7 +1363,7 @@ html.has-scroll-dragging {
 		display: block;
 		margin-bottom: 2em;
 		text-transform: lowercase;
-		color: #101010;
+	
 	}
 
 	.mail-2{
@@ -1394,7 +1394,7 @@ html.has-scroll-dragging {
 
 	.info span{
 		display: block;
-    	font-size: 0.75em;
+        font-size: 0.6em;
 	}
 
 

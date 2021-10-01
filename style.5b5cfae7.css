@@ -11,7 +11,17 @@ svg {
   filter: url(#transmissionerror);
 }
 
+.c-header_title_line{
+  filter: url(#transmissionerror);
+}
 
+.goal{
+    filter: url(#transmissionerror);
+}
+
+.theframe{
+      filter: url(#transmissionerror);
+}
 
 #app{
     position: absolute;

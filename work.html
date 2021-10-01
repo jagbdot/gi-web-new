@@ -118,7 +118,34 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				</section>
 				<!--Vimeo Wrapper -->
 				<div class="grid-wrapper">
-					<div class="sponsor-2">
+					                            <div class="sponsor">
+                            <script id="v-svg" type="x/template">
+          <div class="w-100">
+            <!-- ANIMATED -->
+            <div class="flex">
+              <div class="w-3/4">
+         
+                <svg>
+                  <filter id="transmissionerror">
+                    <feColorMatrix type="saturate" values="1" in="SourceGraphic" result="colormatrix1" />
+                    <feColorMatrix type="matrix" values="0.98 0   0   0   0.  0   0.98  0   0   0.  0   0   0.97  0   0   0   0   0   1   0 " in="colormatrix1" result="colormatrix2" />
+                    <feTurbulence ref="turbAnim" type="turbulence" baseFrequency="0.002 0.008" numOctaves="2" seed="5" stitchTiles="noStitch" result="turbulence">
+                      <animate ref="bfAnim" attributeName="baseFrequency" from="0.002 0.008" to="0.002 0.01" dur="3500ms" repeatCount="indefinite" />
+                      <animate ref="ocAnim" attributeName="numOctaves" from="1" to="10" dur="750ms" repeatCount="indefinite" />
+                      <animate ref="sdAnim" attributeName="seed" from="1" to="100" dur="10s" repeatCount="indefinite" />
+                    </feTurbulence>
+                    <feColorMatrix type="saturate" values="30" in="turbulence" result="colormatrix3" />
+                    <feColorMatrix type="matrix" values="0.89 0   0   0   0   0   0.97  0   0   0   0   0   0.35  0   0   0   0   0   1   0 " in="colormatrix3" result="colormatrix4" />
+                    <feDisplacementMap in="colormatrix2" in2="colomatrix4" scale="15" xChannelSelector="R" yChannelSelector="A" result="displacementMap" />
+                  </filter>s
+                </svg>
+              </div>
+          </div>
+    </script>
+    <div id="app">
+        <svg-playground></svg-playground>
+    </div>
+		
 						<div class="wrapper">
 							<div class="box box-1 goal">
 								<a class="link" href="walk-alone.html"><div class="theframe frame1"></div></a>
@@ -161,7 +188,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	    <script src="menu.0c91648c.js"></script>
 	    <script src="js.00a46daa.js"></script>
 	   	<script src="cursor.f70347af.js"></script>
+
 	   	<script src="script.c48cd1fc.js"></script>
+	   	
 	   	<script src="script.3482ae34.js"></script>
 	   	<script src="script.89b41b21.js"></script>
 	   	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
