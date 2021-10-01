@@ -289,41 +289,11 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	    <script src="menu.0c91648c.js"></script>
 	    <script src="js.00a46daa.js"></script>
 	   	<script src="cursor.f70347af.js"></script>
-		<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-		<script>var iframe = $('#vimeo-player')[0];
-var player = $f(iframe);
-$('.play').hide();
-$('.unmute').hide();
-$('.stop').click(function () {
-  player.api('pause');
-  $('.play').toggle();
-  $('.stop').hide();
-});
-$('.play').click(function () {
-  player.api('play');
-  $('.stop').toggle();
-  $('.play').hide();
-});
-$('.mute').click(function () {
-  player.api('setVolume', 0);
-  $('.unmute').toggle();
-  $('.mute').hide();
-});
-$('.unmute').click(function () {
-  player.api('setVolume', 1);
-  $('.mute').toggle();
-  $('.unmute').hide();
-});</script>
+
   		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script><script src="trigger.22f9dc1c.js"></script>
 
-		<script src="js.00a46daa.js?version=1"></script>
-		<script>$.ajax({
-  url: "myurl",
-  success: myCallback,
-  cache: false
-});</script>
 
 
 		<script>TweenMax.to(".first-curtain", 0.8, {
@@ -396,8 +366,36 @@ tl.from(".yeep .surface-img1", {
     window.location = goTo;
   }, 1250); // time in ms
 });</script>
-		<script>
-			
-		</script>
+		<script src="js.00a46daa.js?version=1"></script>
+		<script>$.ajax({
+  url: "myurl",
+  success: myCallback,
+  cache: false
+});</script>
+		<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+		<script>var iframe = $('#vimeo-player')[0];
+var player = $f(iframe);
+$('.play').hide();
+$('.unmute').hide();
+$('.stop').click(function () {
+  player.api('pause');
+  $('.play').toggle();
+  $('.stop').hide();
+});
+$('.play').click(function () {
+  player.api('play');
+  $('.stop').toggle();
+  $('.play').hide();
+});
+$('.mute').click(function () {
+  player.api('setVolume', 0);
+  $('.unmute').toggle();
+  $('.mute').hide();
+});
+$('.unmute').click(function () {
+  player.api('setVolume', 1);
+  $('.mute').toggle();
+  $('.unmute').hide();
+});</script>
 	</body>
 </html>
