@@ -589,6 +589,11 @@ h6{
 
 }
 
+.content-middle-footer{
+  padding: 0em 0vw 11vw;
+
+}
+
 .min-height{
 	min-height: 120vh;
 }
@@ -1398,12 +1403,12 @@ html.has-scroll-dragging {
 	}
 
 
-
-	.info div{
+.info div {
     display: inline-block;
     float: left;
-    width: 21%;
-	}
+    width: 25%;
+    text-align: center;
+}
 
 	.info a{
 			text-decoration: underline;
