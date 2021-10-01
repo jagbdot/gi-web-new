@@ -40,6 +40,7 @@
 		<link rel="stylesheet" href="trigger.76f286a2.css">
 		<link rel="stylesheet" type="text/css" href="base.98fd6c19.css">
 
+
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>document.documentElement.className = "js";
 
@@ -50,6 +51,7 @@ var supportsCssVars = function supportsCssVars() {
 };
 
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
 	</head>
 
 	<!-- Cursor -->
@@ -87,7 +89,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 		<div class="mobile-vimeo-controls">
 			<div>
-				<p><a class="play" href="#"><img class="icon" src="play.1de6c534.svg"></a><a class="stop" href="#"><img class="icon" src="stop.5f0f33b2.svg"></a><a class="mute" href="#"><img class="icon2" src="unmute.fa923d2f.svg"></a><a class="unmute" href="#"><img class="icon2" src="mute.8c8028f1.svg"></a></p>
+				<p><a id="play1" class="play" href="#"><img class="icon" src="play.1de6c534.svg"></a><a id="stop1" class="stop" href="#"><img class="icon" src="stop.5f0f33b2.svg"></a><a id="mute1" class="mute" href="#"><img class="icon2" src="unmute.fa923d2f.svg"></a><a id="unmute1" class="unmute" href="#"><img class="icon2" src="mute.8c8028f1.svg"></a></p>
 			</div>
 		</div>
 		<!-- Locomotive Container -->
@@ -277,26 +279,23 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			<!-- Final Section -->
 	
 		</section></main>
-
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <!-- Vimeo -->
+	    <script src="vimeo.2916a1a9.js"></script>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   		<!-- three js -->
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js" integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
   		<!-- hover-effect js -->
   
 
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 	    <script src="menu.0c91648c.js"></script>
 	    <script src="js.00a46daa.js"></script>
-
-	    <script src="vimeo.2916a1a9.js"></script>
 	   	<script src="cursor.f70347af.js"></script>
-
   		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script><script src="trigger.22f9dc1c.js"></script>
-
-
 
 		<script>TweenMax.to(".first-curtain", 0.8, {
   delay: 0,
@@ -353,6 +352,7 @@ tl.from(".yeep .surface-img1", {
   autoAlpha: 1,
   ease: "power2"
 });</script>
+
 		<script>$('.link').on("click", function (ev) {
   ev.preventDefault(); // prevent default anchor behavior
 
@@ -368,6 +368,7 @@ tl.from(".yeep .surface-img1", {
     window.location = goTo;
   }, 1250); // time in ms
 });</script>
+
 		<script src="js.00a46daa.js?version=1"></script>
 		<script>$.ajax({
   url: "myurl",
