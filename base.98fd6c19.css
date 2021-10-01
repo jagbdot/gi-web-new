@@ -64,6 +64,7 @@
 
 .no-mobile{
 	display: block;
+  min-height: 2000px !important;
 }
 
 .div-to-fill{
@@ -995,19 +996,19 @@ h6{
 }
 
 .lala1{
-	width: 200px;
-	position: relative;
-	left: -10vw;
-	top:-4vw;
+    width: 300px;
+    position: relative;
+    left: -10vw;
+    top: 1vw;
 }
 .lala2{
-	width: 200px;
+	width: 280px;
     position: relative;
     left: -17vw;
     top: 15vw;
 }
 .lala3{
-    width: 200px;
+    width: 300px;
     position: relative;
     left: 0vw;
     top: 20vw;
@@ -1019,27 +1020,27 @@ h6{
     top: 32vw;
 }
 .lala5{
-width: 200px;
+    width: 360px;
     position: relative;
-    left: 5vw;
-    top: 0vw;
+    left: 37vw;
+    top: -12vw;
 }
 .lala6{
-width: 200px;
+    width: 300px;
     position: relative;
-left: 20vw;
-    top: 0vw;
+    left: 46vw;
+    top: 7vw;
 }
 .lala7{
-    width: 200px;
+    width: 300px;
     position: relative;
     left: -32vw;
     top: 17vw;
 }
 .lala8{
-    width: 200px;
+    width: 320px;
     position: relative;
-    left: 22vw;
+    left: 12vw;
     top: -8vw;
 }
 

@@ -28,6 +28,10 @@ iframe {
     left: -48.5% !important;
 }
 
+.c-lerp-block_title span {
+    font-size: 1.375rem;
+}
+
 .square-wrapper {
     width: 460px;
     overflow: hidden;
@@ -177,15 +181,36 @@ iframe {
 
 }
 
+.names{
+	color: #242424 !important;
+}
+
+.c-section_infos {
+   
+    float: right;
+}
+
+.c-direction-block_item span{
+	background-color: transparent;
+}
+
+.rock-salt-number{
+	font-family: rock salt !important;
+	color: #bfbfb8 !important;
+	font-size: 0.7em;
+}
+
 .about-p{
-	font-size: 0.9em;
+    font-size: 1.8em;
     line-height: 1.7;
-    width: 50%;
+    margin: 0 auto;
+    width: 56%;
+    text-align: justify;
     font-weight: 500;
 }
 
 .o-h1, h1 {
-    font-size: max(44.8vw, 30px);
+    font-size: max(47.8vw, 30px);
     font-weight: 500;
     letter-spacing: -48px;
     z-index: -3;
