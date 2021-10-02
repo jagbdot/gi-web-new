@@ -190,7 +190,10 @@ iframe{
     position: absolute;
     overflow: hidden;
     height: 40%;
+    background-size: cover !important;
+    background-position: bottom center !important;
     bottom: 0;
+    background: url("https://s3.amazonaws.com/images.m2i.stamen.com/20211002/toner_6KVOmrzgQO8.png");
 }
 
 #map{
@@ -1387,6 +1390,8 @@ html.has-scroll-dragging {
 
 .full-map{
   width: 100% !important;
+  position: relative;
+  top: -208%;
 }
 
 	.info{
