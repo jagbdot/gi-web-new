@@ -1385,6 +1385,10 @@ html.has-scroll-dragging {
 		width: 170px !important;
 	}
 
+.full-map{
+  width: 100% !important;
+}
+
 	.info{
     position: absolute;
     text-align: left;
