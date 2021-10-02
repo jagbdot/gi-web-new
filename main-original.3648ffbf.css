@@ -19,8 +19,8 @@ a{
 	width: 25%;
 }
 
-.paper-img-hor{
-	width: 15%;
+.paper-img-hor {
+    width: 30%;
 }
 
 iframe{
@@ -245,7 +245,7 @@ iframe {
 }
 
 .about-p{
-    font-size: 1.8em;
+    font-size: 2.2em;
     line-height: 1.7;
     margin: 0 auto;
     width: 56%;
