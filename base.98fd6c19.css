@@ -186,9 +186,10 @@ iframe{
 }
 
 .map-container{
-	width: 100%;
+    width: 18%;
     position: absolute;
     overflow: hidden;
+    border-radius: 100%;
     height: 40%;
     background-size: cover !important;
     background-position: bottom center !important;
@@ -582,9 +583,9 @@ main {
 }
 
 h6{
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin: 2em 0 0.9em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .content-middle{
@@ -1012,13 +1013,13 @@ h6{
 .lala2{
 	width: 280px;
     position: relative;
-    left: -17vw;
+    left: -19vw;
     top: 15vw;
 }
 .lala3{
     width: 300px;
     position: relative;
-    left: 0vw;
+    left: -4vw;
     top: 20vw;
 }
 .lala4{
@@ -1356,6 +1357,7 @@ html.has-scroll-dragging {
 		z-index: 90;
 	}
 
+
 @media screen and (min-width: 53em) {
 
 	.frame h3{
@@ -1364,13 +1366,14 @@ html.has-scroll-dragging {
 	}
 
 	.name{
-		margin: 0.2em 0;
+		    margin: 0.3em 0;
 	}
 
 	.mail{
 		display: block;
-		margin-bottom: 2em;
+    margin-bottom: 1.4em;
 		text-transform: lowercase;
+
 	
 	}
 
@@ -1398,29 +1401,31 @@ html.has-scroll-dragging {
     position: absolute;
     text-align: left;
     width: 85%;
-    height: 62%;
     right: 0;
     margin: auto;
     left: 0;
-    bottom: 0%;
+    top: 9%;
     z-index: 99;
 	}
 
 	.info span{
 		display: block;
-        font-size: 0.6em;
+    font-size: 0.85em;
+    margin-top: 0em;
+        line-height: 1.4em;
 	}
 
 
 .info div {
-    display: inline-block;
-    float: left;
-    width: 25%;
-    text-align: center;
+    display: block;
+    float: right;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
 }
 
 	.info a{
-			text-decoration: underline;
+		
 		}
 
 	.hello{

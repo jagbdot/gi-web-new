@@ -41,7 +41,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 	<!-- BODY -->
 	<body id="contact-body" class="demo-3">
-		<div class="noiseBG"></div>
+		
 		<!-- Overlay + GIF -->
 	    <div class="overlay first-curtain"><img src="stamp.7b788238.svg"></div>
 	    <div class="overlay-2 fourth-curtain"><img src="stamp.7b788238.svg"></div>
@@ -69,15 +69,15 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         
 	<img class="fondo" src="fondo-index.a419be74.png" alt="">
 
-		<main class="container smooth-scroll" id="main" data-scroll-container="">
+		
+		<main class="container overflow-auto" id="main">
 
-           <section class="c-section" data-scroll-section="">
-           	<section id="c-fixed_wrapper" class="c-section" data-textcolor="#fbfbf8" data-bgcolor="#101010">
-			<div class="dark-bg">
-				<section id="header" class="content content--auto">
+           <section class="c-section">
+           	<section id="c-fixed_wrapper" class="c-section" data-textcolor="#fbfbf8" data-bgcolor="#242424">
+			<div class="">
+				<section id="" class="content content--auto">
 					<!-- Frame -->
 					<div class="frame">
-					
 						<div class="frame__title-wrap">
 							<a class="link" href="index.html">
 								<!-- Logo -->
@@ -115,43 +115,138 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 					</div>
 				</section>
+			</div> <!-- Dark bg finished -->
 				<!--Vimeo Wrapper -->
-				<div class="vimeo-wrapper zindex">
+				<div class=" ">
 
 					<div class="sponsor">
+  	<script id="v-svg" type="x/template">
+		  <div class="w-100">
+		    <!-- ANIMATED -->
+		    <div class="flex">
+		      <div class="w-3/4">
+		 
+		        <svg>
+		          <filter id="transmissionerror">
+		            <feColorMatrix type="saturate" values="1" in="SourceGraphic" result="colormatrix1" />
+		            <feColorMatrix type="matrix" values="0.98 0   0   0   0.  0   0.98  0   0   0.  0   0   0.97  0   0   0   0   0   1   0 " in="colormatrix1" result="colormatrix2" />
+		            <feTurbulence ref="turbAnim" type="turbulence" baseFrequency="0.002 0.008" numOctaves="2" seed="5" stitchTiles="noStitch" result="turbulence">
+		              <animate ref="bfAnim" attributeName="baseFrequency" from="0.002 0.008" to="0.002 0.01" dur="3500ms" repeatCount="indefinite" />
+		              <animate ref="ocAnim" attributeName="numOctaves" from="1" to="10" dur="750ms" repeatCount="indefinite" />
+		              <animate ref="sdAnim" attributeName="seed" from="1" to="100" dur="10s" repeatCount="indefinite" />
+		            </feTurbulence>
+		            <feColorMatrix type="saturate" values="30" in="turbulence" result="colormatrix3" />
+		            <feColorMatrix type="matrix" values="0.89 0   0   0   0   0   0.97  0   0   0   0   0   0.35  0   0   0   0   0   1   0 " in="colormatrix3" result="colormatrix4" />
+		            <feDisplacementMap in="colormatrix2" in2="colomatrix4" scale="15" xChannelSelector="R" yChannelSelector="A" result="displacementMap" />
+		          </filter>s
+		        </svg>
+		      </div>
+		  </div>
+	</script>
+	<div id="app">
+		<svg-playground></svg-playground>
+	</div>
+					<div class="relative">
+			  				<img class="snake-logo" src="snake-logo.4bc126e7.png" alt="">
+
+			  				<div class="circle-map-container"><iframe class="map-iframe" src="https://snazzymaps.com/embed/342011" width="100%" height="600px" style="border:none;"></iframe></div>
+			  		</div>
 						<div class="info">
-							<div>
-								<h3>Executive Producer</h3>
-								<h6 class="name">Jordan Barber</h6>
-								<a href="mailto:jordan@goodideastudio.ca"><span class="mail">jordan@goodideastudio.ca</span></a>
+							<div class="info-block">
+									<div>
+										<h3>Executive Producer</h3>
+										<h6 class="name">Mack Stannard</h6>
+										<a href="mailto:mack@goodideastudio.ca"><span class="mail">mack@goodideastudio.ca</span></a>
+									</div>
+									<div>
+										<h3>Executive Producer</h3>
+										<h6 class="name">Jordan Barber</h6>
+										<a href="mailto:jordan@goodideastudio.ca"><span class="mail">jordan@goodideastudio.ca</span></a>
+									</div>
+									<div>
+										<h3>Director // Partner</h3>
+										<h6 class="name">Ross Allen</h6>
+										<a href="mailto:ross@goodideastudio.ca"><span class="mail">ross@goodideastudio.ca</span></a>
+									</div>
+									<div>
+										<h3>Cinematographer // Partner</h3>
+										<h6 class="name">Mitchell Baxter</h6>
+										<a href="mailto:mitchell@goodideastudio.ca"><span class="mail">mitchell@goodideastudio.ca</span></a>
+									</div>
 							</div>
-							<div>
-								<h3>New Business</h3>
-								<h6 class="name">Mack Stannard</h6>
-								<a href="mailto:mack@goodieastudio.ca"><span class="mail">mack@goodieastudio.ca</span></a>
+							<div class="info-block">
+									<div>
+										<h3>New Business</h3>
+										<a href="mailto:mack@goodieastudio.ca"><span class="mail">mack@goodieastudio.ca</span></a>
+									</div>
+									<div>
+										<h3>General inquiries</h3>
+										<a href="mailto:hello@goodideastudio.ca"><span class="mail">hello@goodideastudio.ca</span></a>
+									</div>
 							</div>
-							<div>
-								<h3>General inquiries</h3>
-								<a href="mailto:hello@goodideastudio.ca"><span class="mail">hello@goodideastudio.ca</span></a>
+							<div class="info-block">
+									<div>
+										<h3>GOOD-IDEA®</h3>
+										<span class="">#108 - 950 Powell Street</span>
+										<span class="">Vancouver, BC</span>
+										<span class="">Canada</span>
+									</div>
 							</div>
-							<div>
-								<span class="uppercase">GOOD-IDEA®</span>
-								<span class="uppercase">#108 - 950 Powell Street</span>
-								<span class="uppercase">Vancouver, BC</span>
-								<span class="uppercase">Canada</span>
+							<div class="info-block">
+									<div class="icon-mark">
+										<a href="#"><img src="linkedin2.8a4aaa45.svg" alt=""></a>
+									</div>
+									<div class="icon-mark">
+										<a href="#"><img src="facebook.8089e153.svg" alt=""></a>
+									</div>
+									<div class="icon-mark">
+										<a target="_blank" href="https://vimeo.com/user132168916/"><img src="vimeo.46052204.svg" alt=""></a>
+									</div>
+									<div class="icon-mark">
+										<a target="_blank" href="https://www.instagram.com/goodideastudio/"><img src="instagram.f81272c3.svg" alt=""></a>
+									</div>
 							</div>
-							
-						</div>
-					<div class="map-container">
-					
-					</div>
 					</div>
   				</div>
-			</div> <!-- Dark bg finished -->
+
+  					
+  					</div>
+
+
 				</section>
-
-                </section>
-
+          <section class="content no-padding" data-textcolor="#101010" data-bgcolor="#E4FA4A">
+                <div class="o-container">
+                    <div class="c-cta">
+                     
+                        <div class="c-cta_content">
+                            <div class="o-layout -gutter">
+                                <div class="o-layout_item u-5/5@from-medium">
+                                    <p class="u-label">
+                                        .
+                                    </p>
+                                
+                           <hr class="c-cta_line" data-scroll="" data-scroll-offset="100">
+                        <h1 class="o-title uppercase letter-spacing" data-scroll="">
+                            <span class="o-title_line">
+                                <span>
+                                    work
+                                </span>
+                            </span>
+                            <span class="o-title_line">
+                                <span>
+                                    with us
+                                </span>
+                            </span>
+             
+                        </h1>
+                            <a href="mailto:hello@goodideastudio.ca"><span class="mail-2">hello@goodideastudio.ca</span></a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </section>
 
 		
 </main>

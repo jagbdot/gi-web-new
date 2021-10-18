@@ -11,6 +11,10 @@ svg {
   filter: url(#transmissionerror);
 }
 
+.snake-logo{
+  filter: url(#transmissionerror);
+}
+
 .c-header_title_line{
   filter: url(#transmissionerror);
 }
@@ -29,6 +33,7 @@ svg {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -1;
     margin: auto;
   }
 

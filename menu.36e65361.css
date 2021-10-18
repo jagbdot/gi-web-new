@@ -23,6 +23,63 @@
   will-change: transform;
 }
 
+.relative{
+  position: relative;
+}
+
+.circle-map-container{
+  width: 620px;
+  height: 620px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  left: 4%;
+  bottom: 12%;
+    border: 0.3px solid #808080;
+}
+
+.circle-map-container iframe{
+  overflow: hidden;
+  height: 100vh !important;
+
+}
+
+.no-mix-blend{
+  mix-blend-mode: none !important;
+}
+
+
+.icon-mark {
+    display: inline-block !important;
+    float: right !important;
+    width: auto !important;
+    padding: 3px;
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 8px;
+    background-color: #E4FA4A;
+}
+
+.snake-logo{
+    width: 89%;
+    left: 0%;
+    right: 0;
+    top: -200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.info-block{
+  margin-bottom: 2.5em !important;
+}
+
+.overflow-auto{
+  overflow: auto !important;
+}
+
 
 #menu-mobile ul {
     font-family: inter;
@@ -167,3 +224,23 @@
 .z-index-js-99{
   z-index: 101 !important;
 }
+
+@media screen and (max-width: 850px) {
+
+.snake-logo{
+  display: none;
+}
+
+.circle-map-container{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+.icon-mark {
+    float: unset !important;
+    margin-bottom: 40px;
+}
+
+  }

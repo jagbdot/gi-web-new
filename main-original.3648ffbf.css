@@ -15,6 +15,11 @@ a{
 	 opacity: 0.1 !important;
 }
 
+.o-image {
+    opacity: 0.87;
+    /* mix-blend-mode: multiply; */
+}
+
 .paper-img-ver{
 	width: 25%;
 }
@@ -25,6 +30,10 @@ a{
 
 iframe{
 	z-index: 2;
+}
+
+.o-image_wrapper{
+	background-color: #fbfbf8;
 }
 
 iframe {
@@ -211,8 +220,7 @@ iframe {
   
 
 .o-image:hover img{
-	transform: scale(1.4) !important;
-	transition:  0.5s;
+	
 
 }
 
@@ -248,13 +256,33 @@ iframe {
 	width: 100% !important;
 }
 
+
+
+.on-left{
+	left: 13vw;
+}
+
+.c-section_infos {
+    max-width: none !important;
+}
+
 .about-p{
-    font-size: 2.2em;
+    font-size: 1em;
     line-height: 1.7;
-    margin: 0 auto;
-    width: 56%;
+    width: 27%;
+    top: 31vh;
+    left: 4vw;
     text-align: justify;
+    position: absolute;
     font-weight: 500;
+}
+
+.first-image-culture{
+width: 52%;
+    float: right;
+    position: absolute;
+    top: 20vh;
+    right: 6vw;
 }
 
 .o-h1, h1 {
@@ -303,10 +331,11 @@ iframe {
     text-transform: lowercase;
 }
 
+
 	.about-p{
 		font-size: 1em;
 	    line-height: 1.7;
-	    width: 100%;
+	    width: 90%;
 	    margin-bottom: 4em;
 	}
 
@@ -321,6 +350,13 @@ iframe {
 	.mail-2{
 		color: #fbfbf8 !important;
 	}
-
+.first-image-culture{
+width: 52%;
+    float: right;
+    position: absolute;
+    display: none;
+    top: 20vh;
+    right: 6vw;
+}
 
 }
