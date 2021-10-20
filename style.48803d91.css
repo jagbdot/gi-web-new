@@ -7,6 +7,10 @@
   width: 9em !important;
 }
 
+  .mobile-grid{
+    display: none;
+  }
+
 .grid-wrapper{
     right: 0;
     bottom: 0;
@@ -193,4 +197,54 @@ width: 23%;
   background-size: cover;
   background-position: center;
   opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+
+.has-scroll-smooth body{
+  overflow: unset !important;
+}
+
+body{
+  overflow: unset !important;
+}
+
+html.has-scroll-smooth {
+    overflow: unset !important;
+}
+
+body.has-scroll-smooth{
+    overflow: unset !important;
+}
+
+main{
+  overflow: unset !important;
+}
+
+#header{
+  height: 0 !important;
+}
+
+  .grid-wrapper {
+      display: none;
+    }
+
+  .mobile-grid{
+    display: block;
+    margin-top: 35%;
+    position: absolute;
+  }
+
+  .mobile-grid h3{
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+
+  .thumbnail-box{
+    width: 100%
+  }
+
+  .thumbnail-box img{
+    width: 100%
+  }
 }

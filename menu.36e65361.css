@@ -227,6 +227,14 @@
 
 @media screen and (max-width: 850px) {
 
+  #hamburger{
+    position: fixed;
+  }
+
+  #menu-mobile ul{
+    position: fixed;
+  }
+
 .snake-logo{
   display: none;
 }

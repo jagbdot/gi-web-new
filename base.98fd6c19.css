@@ -146,8 +146,6 @@
     display: inline-block;
     float: left;
 }
-
-
 .right-content {
     width: 50%;
     display: inline-flex;
@@ -1616,6 +1614,26 @@ html.has-scroll-dragging {
 
 @media screen and (max-width: 850px) {
 
+.sponsor {
+  
+}
+
+
+
+.frame__title-wrap {
+    margin-top: 6em !important;
+}
+
+.frame {
+    height: 5vh !important;
+}
+
+
+
+.frame span{
+  display: none;
+}
+
 .second-curtain {
     background-size: cover !important;
     background-position: 50%;
@@ -1839,4 +1857,8 @@ h6 {
 	.frame__title-wrap .the-stamp{
 		display: none;
 	}
+
+  .main{
+  overflow: unset !important;
+}
 }

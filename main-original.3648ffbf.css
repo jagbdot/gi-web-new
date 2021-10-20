@@ -322,6 +322,14 @@ width: 52%;
 
 
 @media screen and (max-width: 850px) {
+
+.about-p {
+    font-size: 0.8em !important;
+    line-height: 1.5;
+    width: 27%;
+    top: 27vh !important;
+}
+
 .o-h1, h1 {
     font-size: max(44.8vw, 30px);
     font-weight: 500;
