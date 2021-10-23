@@ -1641,6 +1641,13 @@ html.has-scroll-dragging {
   
 }
 
+.third-curtain {
+  background-image: url("final-intro.323c737c.gif");
+  background-position: center;
+  background-size: 300px 100px;
+  z-index: 97;
+}
+
 .credits{
      font-size: 10px !important;
     text-transform: uppercase !important;
@@ -1795,6 +1802,10 @@ h6 {
 .description {
     font-size: 11px !important;
     line-height: 1 !important;
+}
+
+.project-subtitle-preview{
+  font-size: 2.25vw;
 }
 
 .number{
