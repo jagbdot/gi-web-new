@@ -3289,4 +3289,28 @@ ScrollTrigger.addEventListener("refresh", function () {
 }); // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 
 ScrollTrigger.refresh();
+var scroll = new _locomotiveScroll.default({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+  lerp: 0.03,
+  // Linear Interpolation, 0 > 1 // Try 0.01
+  multiplier: 1.4,
+  // Effect Multiplier
+  reloadOnContextChange: true,
+  touchMultiplier: 2,
+  smoothMobile: 0,
+  smartphone: {
+    smooth: !0,
+    breakpoint: 767
+  }
+});
+setTimeout(function () {
+  locoScroll.destroy();
+}, 0);
+setTimeout(function () {
+  locoScroll.init();
+}, 50);
+setTimeout(function () {
+  locoScroll.update();
+}, 1000);
 },{"./utils":"MgTz","locomotive-scroll":"ez7q"}]},{},["QvaY"], null)
