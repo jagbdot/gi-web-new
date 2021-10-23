@@ -16,6 +16,10 @@
   display: none;
 }
 
+  .info2{
+    display: block;
+  }
+
 .mobile-grabs{
 	display: none;
 }
@@ -1821,7 +1825,7 @@ h6 {
 	}
 
 .mobile-recommendation{
-  margin: 12em 1em 0;
+  margin: 8em 1em 3em;
   display: block;
 }
 
@@ -1832,6 +1836,10 @@ h6 {
 	.no-mobile{
 		display: none !important;
 	}
+
+  .info2{
+    display: none;
+  }
 
   .no-desktop{
   display: block;
