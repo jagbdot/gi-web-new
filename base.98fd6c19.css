@@ -1574,11 +1574,16 @@ html.has-scroll-dragging {
 		color: var(--color-link);
 	}
 
+
+
 	.credits{
 	text-align: center !important;
     width: 100% !important;
     font-family: rock salt !important;
     line-height: 1.8 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+
 	}
 
 	.credits span{
@@ -1586,6 +1591,7 @@ html.has-scroll-dragging {
     	font-weight: 900;
     	text-transform: uppercase;
     	font-family: 'inter';
+
 	}
 
 	.credits a{
@@ -1633,6 +1639,11 @@ html.has-scroll-dragging {
 
 .sponsor {
   
+}
+
+.credits{
+     font-size: 12px !important;
+    text-transform: uppercase !important;
 }
 
 body{
@@ -1771,10 +1782,11 @@ h6 {
 .intro {
         line-height: 1.4;
     font-size: 29.5px;
+    margin-top: 1em;
 }
 
 .description {
-    font-size: 15px !important;
+    font-size: 14px !important;
     line-height: 1 !important;
 }
 
@@ -1791,6 +1803,7 @@ h6 {
 	width: 28px !important;
 	margin: 0 25px;
 }
+
 
 .content__breakout--medium img {
     width: 100vw !important;
@@ -1847,6 +1860,7 @@ h6 {
 
   .no-desktop{
   display: block;
+      letter-spacing: -4px;
 }
 	.div-to-fill{
 		display: none;
