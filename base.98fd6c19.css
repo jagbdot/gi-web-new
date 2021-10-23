@@ -13,7 +13,7 @@
 }
 
 .no-desktop{
-  display: none;
+  display: none !important;
 }
 
   .info2{
@@ -1653,8 +1653,10 @@ body{
 
 
 .mobile-h1{
-      font-size: 7vw;
+      font-size: 6vw;
+      line-height: 1.2;
       color: white;
+      font-weight: 600;
       display: block;
 }
 
@@ -1864,9 +1866,14 @@ h6 {
   }
 
   .no-desktop{
-  display: block;
+  display: block !important;
       letter-spacing: -4px;
 }
+
+.margin-auto{
+  margin: 0 auto;
+}
+
 	.div-to-fill{
 		display: none;
 	}
