@@ -1618,7 +1618,9 @@ html.has-scroll-dragging {
   
 }
 
-
+body{
+  overflow: unset !important; 
+}
 
 .frame__title-wrap {
     margin-top: 6em !important;
@@ -1802,6 +1804,7 @@ h6 {
 
 	#hamburger {
 	    display: block;
+      z-index: 120 !important;
 	}
 
 	.frame{
