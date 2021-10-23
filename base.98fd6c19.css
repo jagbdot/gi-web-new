@@ -8,6 +8,14 @@
 	font-size: 16px;
 }
 
+.mobile-recommendation{
+  display: none;
+}
+
+.no-desktop{
+  display: none;
+}
+
 .mobile-grabs{
 	display: none;
 }
@@ -592,7 +600,7 @@ h6{
 }
 
 .content-middle-footer{
-  padding: 0em 0vw 11vw;
+  padding: 0em 0vw 32vw;
 
 }
 
@@ -1627,6 +1635,8 @@ body{
   overflow: unset !important; 
 }
 
+
+
 .mobile-h1{
       font-size: 7vw;
       color: white;
@@ -1809,10 +1819,23 @@ h6 {
 		width: 100%;
 		margin: 5px 0;
 	}
+
+.mobile-recommendation{
+  margin: 12em 1em 0;
+  display: block;
+}
+
+.mobile-recommendation img{
+  width: 100%;
+}
+
 	.no-mobile{
 		display: none !important;
 	}
 
+  .no-desktop{
+  display: block;
+}
 	.div-to-fill{
 		display: none;
 	}
