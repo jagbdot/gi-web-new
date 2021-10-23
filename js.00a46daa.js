@@ -3245,11 +3245,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var backtopEl = document.querySelector('.backtop');
 var headerEl = document.querySelector('#header');
 gsap.registerPlugin(ScrollTrigger); // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
-var locoScroll = new _locomotiveScroll.default({
-  el: document.querySelector(".smooth-scroll"),
-  smooth: true
-}); // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 
 locoScroll.on("scroll", ScrollTrigger.update); // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
 
@@ -3304,13 +3300,16 @@ var scroll = new _locomotiveScroll.default({
     breakpoint: 767
   }
 });
-setTimeout(function () {
-  locoScroll.destroy();
-}, 0);
-setTimeout(function () {
-  locoScroll.init();
-}, 50);
-setTimeout(function () {
-  locoScroll.update();
-}, 1000);
+var locoScroll = new _locomotiveScroll.default({
+  el: document.querySelector(".smooth-scroll"),
+  smooth: true,
+  mobile: {
+    smooth: true
+  },
+  tablet: {
+    smooth: true,
+    breakpoint: 0 // <---- Fixes The Issue 
+
+  }
+});
 },{"./utils":"MgTz","locomotive-scroll":"ez7q"}]},{},["QvaY"], null)
