@@ -312,8 +312,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .second-curtain-kd {
@@ -322,8 +320,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .second-curtain-fd {
@@ -332,8 +328,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .second-curtain-hotn {
@@ -342,8 +336,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .second-curtain-me {
@@ -352,8 +344,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .second-curtain-hg {
@@ -362,8 +352,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .second-curtain-sy {
@@ -372,8 +360,6 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-    height: 100vh;
-  min-height: 100%;
 }
 
 .third-curtain {
@@ -382,15 +368,8 @@ body{
   background-repeat: no-repeat !important;
   background-size: 100%;
   z-index: 97;
-  height: 100vh;
-  min-height: 100%;
 }
 
-.third-curtain {
-    background-size: cover !important;
-    background-position: 50%;
-    height: 100vh;
-}
 
 
 .first-curtain img{
@@ -1665,9 +1644,9 @@ html.has-scroll-dragging {
 
 .third-curtain {
   background-position: center !important;
-  background-size: auto 100% !important;
+
   z-index: 97;
-height: 100vh;
+
   width: 90% !important;
 
 }
