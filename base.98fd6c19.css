@@ -1728,12 +1728,25 @@ body{
 }
 
 .third-curtain {
-  background-image: url("final-intro-mobile.963ee8ad.gif");
+  background-image: unset;
   background-attachment: fixed;
   background-repeat: no-repeat !important;
   background-size: auto 100%;
   z-index: 97;
 }
+
+.first-curtain img{
+  position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+
+    content: '';
+    -webkit-animation: spin 0.1s linear infinite;
+}
+
 
 
 
