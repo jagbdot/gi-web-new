@@ -1642,14 +1642,7 @@ html.has-scroll-dragging {
   
 }
 
-.third-curtain {
-  background-position: center !important;
 
-  z-index: 97;
-
-  width: 90% !important;
-
-}
 
 
 .first-curtain{
@@ -1732,6 +1725,14 @@ body{
 .second-curtain-sy {
     background-size: cover !important;
     background-position: 50%;
+}
+
+.third-curtain {
+  background-image: url("final-intro-mobile.963ee8ad.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: auto 100%;
+  z-index: 97;
 }
 
 
