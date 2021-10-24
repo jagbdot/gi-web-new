@@ -1904,6 +1904,7 @@ h6 {
   .no-desktop{
   display: block !important;
       letter-spacing: -4px;
+      line-height: 1;
 }
 
 .margin-auto{
