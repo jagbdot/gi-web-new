@@ -142,6 +142,8 @@
     top: auto;
 }
 
+
+
 .content{
 	    display: inline-block !important;
 	    width: 100%;
@@ -429,7 +431,9 @@ body{
   transform: rotate(0deg);
 }
 
-
+  .zindex0{
+  z-index: 0 !important;
+}
 
 .sponsor p {
   margin-top: 20px;
@@ -1178,6 +1182,7 @@ h6{
 	margin-top: -160px;
 }
 
+
 .tiles--oneline .tiles__line {
 	height: 100%;
 }
@@ -1921,6 +1926,7 @@ h6 {
 
 	#header{
 		padding: 0 !important;
+    margin-bottom: 2em;
 	}
 
 	.data-info {
@@ -1955,6 +1961,10 @@ h6 {
 	    left: 0em;
 
 	}
+
+  .zindex0{
+  z-index: 0 !important;
+}
 
 	.frame__links, .frame__demos, .frame__contact {
 		display: none;
