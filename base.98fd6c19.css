@@ -1688,43 +1688,43 @@ body{
 }
 
 .second-curtain {
-    background-size: cover !important;
+    background-size: contain !important;
     background-position: 50%;
 }
 
 .second-curtain-tlol {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .second-curtain-kd {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .second-curtain-fd {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .second-curtain-hotn {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .second-curtain-me {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .second-curtain-hg {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .second-curtain-sy {
-    background-size: cover !important;
-    background-position: 50%;
+    background-size: contain !important;
+    background-position: 100%;
 }
 
 .third-curtain {
