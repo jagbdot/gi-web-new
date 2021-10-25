@@ -67,6 +67,7 @@
     left: 0%;
     right: 0;
     top: -200px;
+    z-index: -2;
     margin-right: auto;
     margin-left: auto;
     position: relative;
