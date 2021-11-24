@@ -364,6 +364,14 @@ body{
   z-index: 97;
 }
 
+.second-curtain-db {
+  background-image: url("daboyz-compilation-fast.0c3d2e6d.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
 .third-curtain {
   background-image: url("final-intro.323c737c.gif");
   background-attachment: fixed;
