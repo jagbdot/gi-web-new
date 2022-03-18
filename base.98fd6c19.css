@@ -382,6 +382,14 @@ body{
   z-index: 97;
 }
 
+.second-curtain-we {
+  background-image: url("1.6ee9fd59.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+  z-index: 97;
+}
+
 .third-curtain {
   background-image: url("final-intro.323c737c.gif");
   background-attachment: fixed;
